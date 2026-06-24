@@ -1,5 +1,7 @@
-# BraveOriginFree
-
+# Brave Origin For Windows Free
+# Brave Origin Free Download 
+# Brave Origin
+# Brave Origin Free
 **Brave Origin costs $60 on Windows. On Linux it's free. This fixes that.**
 
 [![Version](https://img.shields.io/badge/Brave_Origin-1.91.175-blue)](https://github.com/brave/brave-browser/releases)
@@ -92,6 +94,8 @@ Brave Origin is supposed to be minimal. This configuration makes sure none of th
 
 Everything that's OFF is handled by CLI flags passed to the browser — same flags that Brave's Linux Origin build has compiled out by default.
 
+#T.ME Link 🔗:
+https://t.me/braveorigin/
 ---
 
 ## Requirements
