@@ -1,0 +1,18 @@
+{
+  "BraveSoftware": {
+    "Brave": {
+      "BraveRewardsDisabled": true,
+      "BraveWalletDisabled": true,
+      "BraveLeoAIEnabled": false,
+      "BraveNewsEnabled": false,
+      "BraveTalkEnabled": false,
+      "BraveVPNEnabled": false,
+      "BraveTorDisabled": true,
+      "BraveAdsDisabled": true,
+      "BraveAutoUpdateDisabled": true,
+      "BraveBackgroundModeDisabled": true,
+      "BraveSyncDisabled": true,
+      "BraveP3AEnabled": false
+    }
+  }
+}

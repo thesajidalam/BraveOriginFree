@@ -1,0 +1,80 @@
+name: Build Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Brave Origin version or "latest"'
+        required: true
+        default: 'latest'
+  schedule:
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $v = "${{ github.event.inputs.version || 'latest' }}"
+          
+          # Get version
+          if ($v -eq 'latest') {
+            $r = Invoke-WebRequest 'https://api.github.com/repos/brave/brave-browser/releases/latest' -UseBasicParsing | ConvertFrom-Json
+            $v = $r.tag_name -replace '^v', ''
+          }
+          echo "Version: v$v"
+          
+          # Download
+          $zipUrl = "https://github.com/brave/brave-browser/releases/download/v$v/brave-origin-v$v-win32-x64.zip"
+          $zipPath = "brave-origin-v$v.zip"
+          Invoke-WebRequest $zipUrl -OutFile $zipPath -UseBasicParsing -TimeoutSec 600
+          
+          # Extract
+          Expand-Archive $zipPath .\bin -Force
+          Remove-Item $zipPath -Force
+          
+          # Create release package
+          $relDir = "BraveOriginFree-v$v"
+          New-Item -ItemType Directory -Path $relDir -Force | Out-Null
+          
+          Copy-Item run.bat, install.bat, README.md, LICENSE, config, profile -Destination $relDir -Recurse -Force
+          Copy-Item src, bin -Destination $relDir -Recurse -Force
+          Remove-Item -Recurse -Force "$relDir\bin\149.*" -ErrorAction SilentlyContinue
+          
+          # Create zip
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          $zip = "BraveOriginFree-v$v.zip"
+          [System.IO.Compression.ZipFile]::CreateFromDirectory((Resolve-Path $relDir), (Join-Path (Resolve-Path '.') $zip))
+          Remove-Item -Recurse -Force $relDir -ErrorAction SilentlyContinue
+          
+          echo "PACKAGE_PATH=$(Resolve-Path $zip)" >> $env:GITHUB_ENV
+          echo "PACKAGE_NAME=$zip" >> $env:GITHUB_ENV
+          echo "RELEASE_VERSION=$v" >> $env:GITHUB_ENV
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ env.RELEASE_VERSION }}
+          name: BraveOriginFree v${{ env.RELEASE_VERSION }}
+          body: |
+            BraveOriginFree v${{ env.RELEASE_VERSION }}
+
+            Brave Origin for Windows - Free. No purchase required.
+
+            - Official Brave Origin binary (signed, untouched)
+            - Free activation bypass pre-applied
+            - All extras disabled (Rewards, Wallet, Leo AI, News, VPN, Tor)
+            - Portable - no install, no registry, no admin
+
+            1. Download the ZIP
+            2. Extract anywhere
+            3. Run install.bat (first time) or run.bat (any time)
+          files: ${{ env.PACKAGE_PATH }}

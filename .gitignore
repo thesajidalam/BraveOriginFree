@@ -1,0 +1,26 @@
+# BraveOriginFree
+
+# Browser binary is auto-downloaded
+bin/
+
+# User profile data is auto-generated
+data/
+
+# Build artifacts
+dist/
+*.zip
+*.7z
+
+# Temp backups
+bin.bak/
+
+# Logs
+logs/
+*.log
+
+# Windows junk
+Thumbs.db
+Desktop.ini
+
+# macOS junk
+.DS_Store
