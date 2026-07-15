@@ -3,7 +3,7 @@
 # Brave Origin
 # Brave Origin Free
 **Brave Origin costs $60 on Windows. On Linux it's free. This fixes that.**
-
+[![License](https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/refs/heads/main/assets/BravePage.png)]()
 [![Version](https://img.shields.io/badge/Brave_Origin-1.91.175-blue)](https://github.com/brave/brave-browser/releases)
 [![Platform](https://img.shields.io/badge/Windows-10_11-green)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
