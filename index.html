@@ -3,816 +3,437 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Brave Origin — Project Overview</title>
-
-  <meta
-    name="description"
-    content="Brave Origin project overview, features, platform information, technical notes, and resources."
-  >
-
+  <title>Brave Origin Free Download — Get Brave Origin for Windows Free</title>
+  <meta name="description" content="Brave Origin Free Download. Get Brave Origin for Windows without paying $59.99. Brave Origin Crack alternative — free activation bypass using official signed binary. Brave Origin Mod configuration for Windows.">
+  <meta name="keywords" content="Brave Origin Free Download, Brave Origin Crack, Brave Origin Mod, Brave Origin free, Brave Origin Windows, Brave Origin bypass, Brave Origin free download Windows 10, Brave Origin free download Windows 11, Brave Origin activation, Brave Origin patch, Brave Origin unlock, Brave Origin Linux free Windows, Brave Origin free alternative, download Brave Origin free, Brave Origin no purchase, Brave Origin gratis">
   <meta name="author" content="Sajid Alam">
   <meta name="robots" content="index, follow">
-
-  <meta property="og:title" content="Brave Origin — Project Overview">
-  <meta
-    property="og:description"
-    content="A modern project page covering Brave Origin, its features, architecture, and technical details."
-  >
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brave Origin Free Download — Get Brave Origin for Windows Free">
+  <meta property="og:description" content="Brave Origin Free Download. Get Brave Origin for Windows without paying. Brave Origin Crack, Mod, and free activation — all in one.">
   <meta property="og:url" content="https://github.com/thesajidalam/BraveOriginFree">
-  <meta
-    property="og:image"
-    content="https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/main/assets/BravePage.png"
-  >
-
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/main/assets/BravePage.png">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Brave Origin — Project Overview">
-  <meta
-    name="twitter:description"
-    content="Technical overview and project resources for Brave Origin."
-  >
-  <meta
-    name="twitter:image"
-    content="https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/main/assets/BravePage.png"
-  >
+  <meta name="twitter:title" content="Brave Origin Free Download — Get Brave Origin for Windows Free">
+  <meta name="twitter:description" content="Brave Origin Free Download. Get Brave Origin for Windows without $60 payment. Free activation, official signed binary.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/main/assets/BravePage.png">
 
   <style>
-    :root {
-      --bg: #070b12;
-      --bg-soft: #0b111b;
-      --surface: rgba(17, 24, 39, 0.72);
-      --surface-hover: rgba(24, 33, 51, 0.88);
-      --border: rgba(148, 163, 184, 0.14);
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --subtle: #64748b;
-
-      --accent: #ff8a00;
-      --accent-2: #ff4d00;
-
-      --success: #22c55e;
-
-      --radius: 18px;
-      --max-width: 1080px;
-
-      --shadow:
-        0 24px 80px rgba(0, 0, 0, 0.42);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
+    body::before {
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background:radial-gradient(circle at top, rgba(251,139,0,.08), transparent 55%);
+      z-index:-1;
     }
 
     body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
       min-height: 100vh;
-      font-family:
-        Inter,
-        ui-sans-serif,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-
-      color: var(--text);
-      background:
-        radial-gradient(
-          circle at 50% -10%,
-          rgba(255, 122, 0, 0.14),
-          transparent 38%
-        ),
-        radial-gradient(
-          circle at 90% 20%,
-          rgba(255, 77, 0, 0.07),
-          transparent 28%
-        ),
-        var(--bg);
-
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: -1;
-
-      background-image:
-        linear-gradient(
-          rgba(255, 255, 255, 0.018) 1px,
-          transparent 1px
-        ),
-        linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.018) 1px,
-          transparent 1px
-        );
-
-      background-size: 48px 48px;
-
-      mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 75%
-      );
-    }
-
-    a {
-      color: inherit;
+      display: flex;
+      flex-direction: column;
     }
 
     .container {
-      width: min(
-        calc(100% - 40px),
-        var(--max-width)
-      );
-
-      margin-inline: auto;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      flex: 1;
     }
 
-    /* ─────────────────────────────
-       NAVIGATION
-    ───────────────────────────── */
-
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-
-      border-bottom: 1px solid var(--border);
-
-      background: rgba(7, 11, 18, 0.72);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
-
-    .nav-inner {
-      min-height: 68px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-
-      text-decoration: none;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-mark {
-      width: 34px;
-      height: 34px;
-
-      display: grid;
-      place-items: center;
-
-      border-radius: 10px;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--accent),
-          var(--accent-2)
-        );
-
-      box-shadow:
-        0 8px 28px rgba(255, 107, 0, 0.25);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    /* ─────────────────────────────
-       HERO
-    ───────────────────────────── */
-
-    .hero {
-      padding: 110px 0 70px;
+    header {
       text-align: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-
-      padding: 7px 13px;
-
-      border: 1px solid rgba(255, 138, 0, 0.2);
-      border-radius: 999px;
-
-      color: #ffb15c;
-      background: rgba(255, 138, 0, 0.07);
-
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-
-      border-radius: 50%;
-      background: var(--success);
-
-      box-shadow:
-        0 0 0 4px rgba(34, 197, 94, 0.1);
+      padding: 70px 0 20px;
     }
 
     h1 {
-      max-width: 900px;
-
-      margin: 24px auto 0;
-
-      font-size: clamp(
-        3rem,
-        8vw,
-        6.2rem
-      );
-
-      line-height: 0.98;
-      letter-spacing: -0.065em;
-      font-weight: 900;
-    }
-
-    .gradient-text {
-      background:
-        linear-gradient(
-          135deg,
-          #ffffff 15%,
-          #ffb15c 55%,
-          #ff5a00 100%
-        );
-
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #fb8b00, #ff4500);
       -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       background-clip: text;
-      color: transparent;
     }
 
-    .hero-description {
-      max-width: 720px;
-
-      margin: 28px auto 0;
-
-      color: var(--muted);
-      font-size: clamp(
-        1rem,
-        2vw,
-        1.2rem
-      );
+    .subtitle {
+      font-size: 1.3rem;
+      color: #8b949e;
+      margin-top: 12px;
     }
 
-    .hero-actions {
+    .cost-line {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 20px 0;
+      color: #f85149;
+    }
+
+    .cost-line span {
+      color: #3fb950;
+    }
+
+    .hero-buttons {
       display: flex;
+      gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 12px;
-
-      margin-top: 34px;
+      margin: 32px 0;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 9px;
-
-      min-height: 48px;
-      padding: 0 21px;
-
-      border-radius: 12px;
-
-      border: 1px solid var(--border);
-
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
       text-decoration: none;
-
-      font-weight: 750;
-      font-size: 0.94rem;
-
-      transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
     }
 
     .btn-primary {
-      color: white;
-
-      border-color: transparent;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--accent),
-          var(--accent-2)
-        );
-
-      box-shadow:
-        0 12px 35px rgba(255, 94, 0, 0.25);
+      background: linear-gradient(135deg, #fb8b00, #ff4500);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(251, 139, 0, 0.4);
     }
 
     .btn-primary:hover {
-      box-shadow:
-        0 16px 45px rgba(255, 94, 0, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(251, 139, 0, 0.6);
     }
 
     .btn-secondary {
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--text);
+      background: #21262d;
+      color: #e6edf3;
+      border: 1px solid #30363d;
     }
 
     .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.22);
+      background: #30363d;
     }
 
-    /* ─────────────────────────────
-       HERO IMAGE
-    ───────────────────────────── */
-
-    .hero-image {
-      margin-top: 70px;
+    .btn-github {
+      background: #24292f;
+      color: #fff;
     }
 
-    .hero-image-frame {
-      position: relative;
-
-      padding: 1px;
-
-      border-radius: 22px;
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255, 138, 0, 0.45),
-          rgba(255, 255, 255, 0.08),
-          rgba(255, 77, 0, 0.25)
-        );
-
-      box-shadow: var(--shadow);
+    .btn-github:hover {
+      background: #2d333b;
     }
 
-    .hero-image-frame::before {
-      content: "";
-
-      position: absolute;
-      inset: -80px;
-
-      z-index: -1;
-
-      background:
-        radial-gradient(
-          circle,
-          rgba(255, 105, 0, 0.14),
-          transparent 65%
-        );
+    .badge-row {
+      text-align: center;
+      margin: 24px 0;
     }
 
-    .hero-image img {
-      display: block;
-
-      width: 100%;
-
-      border-radius: 21px;
-
-      background: #090d14;
+    .badge-row img {
+      height: 28px;
+      margin: 4px;
     }
-
-    /* ─────────────────────────────
-       BADGES
-    ───────────────────────────── */
-
-    .badges {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-
-      margin-top: 26px;
-    }
-
-    .badges img {
-      height: 25px;
-      display: block;
-    }
-
-    /* ─────────────────────────────
-       SECTIONS
-    ───────────────────────────── */
 
     .section {
-      padding: 72px 0;
+      margin: 48px 0;
     }
 
-    .section-heading {
-      max-width: 720px;
-      margin-bottom: 30px;
+    .section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #f0f6fc;
     }
 
-    .section-kicker {
-      color: var(--accent);
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      margin-top: 8px;
-
-      font-size: clamp(
-        2rem,
-        4vw,
-        3rem
-      );
-
-      line-height: 1.1;
-      letter-spacing: -0.045em;
-    }
-
-    .section-description {
-      margin-top: 12px;
-      color: var(--muted);
-    }
-
-    /* ─────────────────────────────
-       CARDS
-    ───────────────────────────── */
-
-    .card-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(
-          auto-fit,
-          minmax(240px, 1fr)
-        );
-
-      gap: 14px;
+    .section h2::before {
+      content: "▌";
+      color: #fb8b00;
+      margin-right: 8px;
     }
 
     .card {
-      padding: 25px;
-
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255, 255, 255, 0.045),
-          rgba(255, 255, 255, 0.018)
-        );
-
-      box-shadow:
-        0 12px 45px rgba(0, 0, 0, 0.16);
-
-      transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        background 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-
-      border-color:
-        rgba(255, 138, 0, 0.25);
-
-      background:
-        var(--surface-hover);
-    }
-
-    .card-icon {
-      width: 44px;
-      height: 44px;
-
-      display: grid;
-      place-items: center;
-
-      margin-bottom: 17px;
-
-      border-radius: 13px;
-
-      background:
-        rgba(255, 138, 0, 0.09);
-
-      border:
-        1px solid rgba(255, 138, 0, 0.15);
-
-      font-size: 1.25rem;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 16px 0;
     }
 
     .card h3 {
-      font-size: 1.08rem;
-      margin-bottom: 7px;
+      color: #fb8b00;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
     }
 
-    .card p {
-      color: var(--muted);
-      font-size: 0.92rem;
+    .steps {
+      list-style: none;
+      counter-reset: step;
     }
 
-    /* ─────────────────────────────
-       FEATURES
-    ───────────────────────────── */
+    .steps li {
+      counter-increment: step;
+      padding: 16px 20px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      background: linear-gradient(135deg, #fb8b00, #ff4500);
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
 
     .feature-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(
-          auto-fit,
-          minmax(170px, 1fr)
-        );
-
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 12px;
     }
 
     .feature {
-      padding: 22px 16px;
-
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 16px;
       text-align: center;
-
-      border: 1px solid var(--border);
-      border-radius: 15px;
-
-      background:
-        rgba(255, 255, 255, 0.025);
-
-      transition:
-        transform 0.2s ease,
-        border-color 0.2s ease;
     }
 
-    .feature:hover {
-      transform: translateY(-3px);
-      border-color:
-        rgba(255, 138, 0, 0.25);
+    .feature .icon {
+      font-size: 1.5rem;
     }
 
-    .feature-icon {
-      font-size: 1.45rem;
-      margin-bottom: 8px;
-    }
-
-    .feature-label {
-      font-size: 0.88rem;
-      font-weight: 650;
-    }
-
-    /* ─────────────────────────────
-       CODE
-    ───────────────────────────── */
-
-    .code-block {
-      overflow-x: auto;
-
-      padding: 22px;
-
-      border: 1px solid var(--border);
-      border-radius: 15px;
-
-      background: #05080d;
-
-      box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.025);
-    }
-
-    pre {
-      margin: 0;
-
-      color: #cbd5e1;
-
-      font:
-        0.88rem/1.75
-        "SFMono-Regular",
-        Consolas,
-        "Liberation Mono",
-        monospace;
-    }
-
-    .code-key {
-      color: #ffb15c;
-    }
-
-    .code-value {
-      color: #86efac;
-    }
-
-    /* ─────────────────────────────
-       FAQ
-    ───────────────────────────── */
-
-    .faq {
-      display: grid;
-      gap: 10px;
+    .feature .label {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-top: 4px;
     }
 
     .faq-item {
-      overflow: hidden;
-
-      border: 1px solid var(--border);
-      border-radius: 14px;
-
-      background:
-        rgba(255, 255, 255, 0.025);
+      margin: 12px 0;
     }
 
     .faq-question {
-      width: 100%;
-
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 600;
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      padding: 20px;
-
-      border: 0;
-      background: transparent;
-
-      color: var(--text);
-
-      text-align: left;
-      font: inherit;
-      font-weight: 700;
-
-      cursor: pointer;
+      transition: background 0.2s;
     }
 
-    .faq-question span {
-      color: var(--accent);
-      transition:
-        transform 0.25s ease;
+    .faq-question:hover {
+      background: #1c2128;
     }
 
     .faq-answer {
-      display: none;
-
-      padding:
-        0 20px 20px;
-
-      color: var(--muted);
-
-      font-size: 0.92rem;
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s, padding 0.3s;
+      border-left: 2px solid #fb8b00;
+      margin-left: 20px;
+      color: #8b949e;
     }
 
     .faq-item.open .faq-answer {
-      display: block;
+      max-height: 500px;
+      padding: 16px 20px;
     }
 
-    .faq-item.open
-    .faq-question span {
+    .faq-item.open .faq-chevron {
       transform: rotate(180deg);
     }
 
-    /* ─────────────────────────────
-       NOTICE
-    ───────────────────────────── */
-
-    .notice {
-      padding: 24px;
-
-      border:
-        1px solid rgba(255, 138, 0, 0.2);
-
-      border-radius: 16px;
-
-      background:
-        rgba(255, 138, 0, 0.055);
+    .faq-chevron {
+      transition: transform 0.3s;
     }
 
-    .notice strong {
-      color: #ffb15c;
-    }
-
-    .notice p {
-      color: var(--muted);
-      margin-top: 6px;
+    .terminal {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      font-family: 'Courier New', monospace;
       font-size: 0.9rem;
+      overflow-x: auto;
     }
 
-    /* ─────────────────────────────
-       FOOTER
-    ───────────────────────────── */
+    .terminal .prompt {
+      color: #3fb950;
+    }
 
-    footer {
+    .terminal .cmd {
+      color: #e6edf3;
+    }
+
+    .terminal .output {
+      color: #8b949e;
+    }
+
+    .terminal .highlight {
+      color: #fb8b00;
+    }
+
+    .disclaimer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: #8b949e;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      color: #8b949e;
+      font-size: 0.85rem;
+      border-top: 1px solid #21262d;
       margin-top: 40px;
-
-      border-top:
-        1px solid var(--border);
-
-      padding: 35px 0;
-
-      color: var(--subtle);
-      font-size: 0.82rem;
     }
 
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .footer-links a {
-      color: var(--muted);
+    .star-btn {
+      display: inline-block;
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+      padding: 8px 16px;
+      border-radius: 6px;
       text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s;
     }
 
-    .footer-links a:hover {
-      color: var(--text);
+    .star-btn:hover {
+      background: #30363d;
     }
 
-    /* ─────────────────────────────
-       RESPONSIVE
-    ───────────────────────────── */
+    .social-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
 
-    @media (max-width: 700px) {
-      .container {
-        width: min(
-          calc(100% - 28px),
-          var(--max-width)
-        );
+    .social-links a {
+      color: #8b949e;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+      color: #fb8b00;
+    }
+
+    .gif-container {
+      text-align: center;
+      margin: 24px 0;
+    }
+
+    .gif-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .comparison > div {
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .comparison .before {
+      background: #1c2128;
+      border: 1px solid #30363d;
+    }
+
+    .comparison .after {
+      background: rgba(63, 185, 80, 0.1);
+      border: 1px solid #3fb950;
+    }
+
+    .comparison .price-before {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #f85149;
+    }
+
+    .comparison .price-after {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #3fb950;
+    }
+
+    .hero-image {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 16px;
+      border: 1px solid #30363d;
+      box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 60px rgba(251,139,0,.15);
+      transition: .25s;
+    }
+
+    .hero-image img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 40px 90px rgba(0,0,0,.55), 0 0 70px rgba(251,139,0,.25);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
       }
 
-      .nav-links {
-        display: none;
+      .comparison {
+        grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 75px;
-      }
-
-      .hero-actions {
+      .hero-buttons {
         flex-direction: column;
+        align-items: stretch;
       }
 
-      .btn {
-        width: 100%;
-      }
-
-      .section {
-        padding: 52px 0;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
+      .hero-buttons .btn {
+        justify-content: center;
       }
     }
   </style>
@@ -820,244 +441,430 @@
 
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar">
-    <div class="container nav-inner">
+  <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+    Brave Origin Free Download — Get Brave Origin for Windows absolutely free. Brave Origin Crack alternative that works with official signed binaries. Brave Origin Mod for Windows 10 and Windows 11. Brave Origin free activation bypass — no purchase required. Download Brave Origin free for Windows. Brave Origin gratis ohne Bezahlung. Brave Origin bypass purchase validation. Brave Origin cracked version free download. Brave Origin modified setup for PC. Brave Origin unlock without paying. Brave Origin patch for Windows. Brave Origin license free. Brave Origin keygen alternative. Brave Origin full version free. Brave Origin premium free download. Brave Origin unlocked for Windows. Brave Origin free download 2025 working. Brave Origin Windows bypass tutorial. Brave Origin free method no payment. Brave Origin unofficial free version.
+  </div>
 
-      <a
-        class="brand"
-        href="#top"
-        aria-label="Brave Origin home"
-      >
-        <span class="brand-mark">B</span>
-        <span>Brave Origin</span>
-      </a>
+  <div class="container">
 
-      <div class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#features">Features</a>
-        <a href="#technical">Technical</a>
-        <a href="#faq">FAQ</a>
+    <header>
+
+      <h1>Brave Origin Free Download</h1>
+
+      <p class="subtitle">
+        <strong>Get Brave Origin Free</strong> — no purchase required
+      </p>
+
+      <p class="cost-line">
+        Before: <s>$59.99</s> &nbsp;→&nbsp; <span>Free</span>
+      </p>
+
+      <div class="badge-row">
+        <img loading="lazy" src="https://img.shields.io/badge/version-1.91.175-blue" alt="Version">
+        <img loading="lazy" src="https://img.shields.io/badge/platform-Windows_10_11-green" alt="Platform">
+        <img loading="lazy" src="https://img.shields.io/badge/license-MIT-brightgreen" alt="License">
+        <img loading="lazy" src="https://img.shields.io/badge/status-stable-success" alt="Status">
+        <img loading="lazy" src="https://img.shields.io/github/stars/thesajidalam/BraveOriginFree?style=social" alt="Stars">
       </div>
 
-      <a
-        class="btn btn-secondary"
-        href="https://github.com/thesajidalam/BraveOriginFree"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub ↗
-      </a>
+      <div class="hero-buttons">
 
-    </div>
-  </nav>
+        <a href="https://github.com/thesajidalam/BraveOriginFree/releases" class="btn btn-primary">
+          ⬇ Download Now
+        </a>
 
+        <a href="https://github.com/thesajidalam/BraveOriginFree" class="btn btn-github">
+          View on GitHub
+        </a>
 
-  <main id="top">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-
-        <span class="eyebrow">
-          Open-source project
-        </span>
-
-        <h1>
-          <span class="gradient-text">
-            Brave Origin
-          </span>
-        </h1>
-
-        <p class="hero-description">
-          A focused Brave browser configuration project
-          exploring a minimal, privacy-oriented browsing
-          experience with unnecessary services disabled.
-        </p>
-
-        <div class="hero-actions">
-
-          <a
-            class="btn btn-primary"
-            href="https://github.com/thesajidalam/BraveOriginFree"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Source
-          </a>
-
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/thesajidalam/BraveOriginFree/releases"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Releases
-          </a>
-
-        </div>
-
-        <div class="badges">
-
-          <img
-            src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue"
-            alt="Windows 10 and Windows 11"
-            loading="lazy"
-          >
-
-          <img
-            src="https://img.shields.io/badge/license-MIT-brightgreen"
-            alt="MIT License"
-            loading="lazy"
-          >
-
-          <img
-            src="https://img.shields.io/github/stars/thesajidalam/BraveOriginFree?style=social"
-            alt="GitHub stars"
-            loading="lazy"
-          >
-
-        </div>
+        <a href="https://github.com/thesajidalam/BraveOriginFree" class="btn btn-secondary">
+          ★ Star on GitHub
+        </a>
 
         <div class="hero-image">
-
-          <div class="hero-image-frame">
-
-            <img
-              src="https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/refs/heads/main/assets/BravePage.png"
-              alt="Brave Origin project preview"
-              loading="eager"
-              fetchpriority="high"
-            >
-
-          </div>
-
+          <img
+            src="https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/refs/heads/main/assets/BravePage.png"
+            alt="Brave Origin Preview"
+            loading="eager"
+            fetchpriority="high">
         </div>
 
       </div>
-    </section>
 
+    </header>
 
-    <!-- OVERVIEW -->
-    <section
-      class="section"
-      id="overview"
-    >
-      <div class="container">
+    <div class="section">
 
-        <div class="section-heading">
-          <span class="section-kicker">
-            Overview
-          </span>
+      <h2>What is this?</h2>
 
-          <h2>
-            A cleaner browsing experience.
-          </h2>
+      <div class="card">
 
-          <p class="section-description">
-            Brave Origin focuses on the core browser experience
-            while reducing optional services and interface
-            components that are not required for everyday browsing.
+        <p>
+          <strong>Brave Origin</strong> is Brave's minimalist browser — same Shields, same privacy, same speed, but without Rewards, Wallet, Leo AI, News, VPN, Tor, or telemetry.
+        </p>
+
+        <p style="margin-top: 12px;">
+          On Linux it's <strong>free</strong>. On Windows it costs <strong>$59.99</strong>.
+        </p>
+
+        <p style="margin-top: 12px;">
+          BraveOriginFree removes that paywall by pre-setting the same configuration flag that Brave themselves use on Linux. The browser binary is the <strong>official signed build</strong> from Brave — unmodified, verified, auto-updating.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>How to use</h2>
+
+      <ol class="steps">
+
+        <li>
+          Download the
+          <a href="https://github.com/thesajidalam/BraveOriginFree/releases" style="color:#fb8b00">
+            latest release ZIP
+          </a>
+        </li>
+
+        <li>
+          Extract anywhere — desktop, documents, USB drive
+        </li>
+
+        <li>
+          Double-click <strong>install.bat</strong> — it downloads Origin + applies the bypass
+        </li>
+
+        <li>
+          <strong>Done.</strong> Brave Origin runs free on your Windows PC.
+        </li>
+
+      </ol>
+
+      <div class="terminal" style="margin-top: 16px;">
+
+        <div>
+          <span class="prompt">$</span>
+          <span class="cmd">curl -L https://github.com/thesajidalam/BraveOriginFree/releases/latest/download/BraveOriginFree-v1.91.175.zip -o BraveOriginFree.zip</span>
+        </div>
+
+        <div>
+          <span class="prompt">$</span>
+          <span class="cmd">powershell Expand-Archive BraveOriginFree.zip -DestinationPath BraveOriginFree</span>
+        </div>
+
+        <div>
+          <span class="prompt">$</span>
+          <span class="cmd">.\BraveOriginFree\install.bat</span>
+        </div>
+
+        <div>
+          <span class="output">✓ Brave Origin activated and ready!</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>What you save</h2>
+
+      <div class="comparison">
+
+        <div class="before">
+          <h3 style="color:#f85149;">Before (Official)</h3>
+          <div class="price-before">$59.99</div>
+          <p style="margin-top:8px;color:#8b949e;">
+            One-time payment per device
           </p>
         </div>
 
-
-        <div class="card-grid">
-
-          <article class="card">
-            <div class="card-icon">🛡️</div>
-
-            <h3>
-              Privacy focused
-            </h3>
-
-            <p>
-              Built around the privacy and blocking capabilities
-              provided by the Brave browser ecosystem.
-            </p>
-          </article>
-
-
-          <article class="card">
-            <div class="card-icon">⚡</div>
-
-            <h3>
-              Minimal interface
-            </h3>
-
-            <p>
-              A streamlined experience designed to keep attention
-              on browsing rather than additional services.
-            </p>
-          </article>
-
-
-          <article class="card">
-            <div class="card-icon">🔍</div>
-
-            <h3>
-              Transparent project
-            </h3>
-
-            <p>
-              Source code and project information are available
-              through the associated GitHub repository.
-            </p>
-          </article>
-
+        <div class="after">
+          <h3 style="color:#3fb950;">With BraveOriginFree</h3>
+          <div class="price-after">$0</div>
+          <p style="margin-top:8px;color:#8b949e;">
+            Free. No payment. No limits.
+          </p>
         </div>
 
       </div>
-    </section>
 
+    </div>
 
-    <!-- FEATURES -->
-    <section
-      class="section"
-      id="features"
-    >
-      <div class="container">
+    <div class="section">
 
-        <div class="section-heading">
-          <span class="section-kicker">
-            Capabilities
-          </span>
+      <h2>Features</h2>
 
-          <h2>
-            Core browser features.
-          </h2>
+      <div class="feature-grid">
+
+        <div class="feature">
+          <div class="icon">🛡️</div>
+          <div class="label">Brave Shields</div>
         </div>
 
+        <div class="feature">
+          <div class="icon">🔑</div>
+          <div class="label">Password Manager</div>
+        </div>
 
-        <div class="feature-grid">
+        <div class="feature">
+          <div class="icon">🧩</div>
+          <div class="label">Chrome Extensions</div>
+        </div>
 
-          <div class="feature">
-            <div class="feature-icon">🛡️</div>
-            <div class="feature-label">
-              Brave Shields
-            </div>
+        <div class="feature">
+          <div class="icon">🔧</div>
+          <div class="label">Developer Tools</div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">📦</div>
+          <div class="label">Portable (USB)</div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🚫</div>
+          <div class="label">No Admin Required</div>
+        </div>
+
+        <div class="feature" style="opacity:0.4">
+          <div class="icon">💰</div>
+          <div class="label">Brave Rewards — OFF</div>
+        </div>
+
+        <div class="feature" style="opacity:0.4">
+          <div class="icon">💎</div>
+          <div class="label">Brave Wallet — OFF</div>
+        </div>
+
+        <div class="feature" style="opacity:0.4">
+          <div class="icon">🤖</div>
+          <div class="label">Leo AI — OFF</div>
+        </div>
+
+        <div class="feature" style="opacity:0.4">
+          <div class="icon">📰</div>
+          <div class="label">News — OFF</div>
+        </div>
+
+        <div class="feature" style="opacity:0.4">
+          <div class="icon">📞</div>
+          <div class="label">Talk — OFF</div>
+        </div>
+
+        <div class="feature" style="opacity:0.4">
+          <div class="icon">🔒</div>
+          <div class="label">VPN — OFF</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>How it works</h2>
+
+      <div class="card">
+
+        <p>
+          Brave Origin stores its activation state in a JSON file called
+          <code>Local State</code>. When you click "Proceed with Origin for free" on Linux, Brave writes:
+        </p>
+
+        <div class="terminal" style="margin:16px 0;">
+
+          <div>
+            <span class="output">{</span>
           </div>
 
-          <div class="feature">
-            <div class="feature-icon">🔑</div>
-            <div class="feature-label">
-              Password Manager
-            </div>
+          <div>
+            <span class="output">
+              &nbsp;&nbsp;"brave": { "origin": { <span class="highlight">"purchase_validated": true</span> } },
+            </span>
           </div>
 
-          <div class="feature">
-            <div class="feature-icon">🧩</div>
-            <div class="feature-label">
-              Extensions
-            </div>
+          <div>
+            <span class="output">
+              &nbsp;&nbsp;"skus": { "state": { "67": "{\"credentials\":{\"items\":{\"6\":\"7\"}}}" } }
+            </span>
           </div>
 
-          <div class="feature">
-            <div class="feature-icon">🔧</div>
-            <div class="feature-label">
-              Developer Tools
-            </div>
+          <div>
+            <span class="output">}</span>
           </div>
 
-          <div class="feature">
-            <div class="feature-ico
+        </div>
+
+        <p>
+          BraveOriginFree writes these exact values <strong>before the browser starts</strong>.
+          The Windows binary sees the same keys, thinks it's purchased, and activates fully.
+        </p>
+
+        <p style="margin-top:12px;color:#8b949e;font-size:0.9rem;">
+          No binaries are modified. No DRM is circumvented. No authentication servers are contacted.
+          This is the same configuration Brave provides for free on Linux.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item open">
+
+        <div class="faq-question">
+          Is this legal?
+          <span class="faq-chevron">▼</span>
+        </div>
+
+        <div class="faq-answer">
+          Brave Origin is free on Linux by Brave's own design. The
+          <code>purchase_validated</code> flag is the same flag the Linux version sets.
+          No binaries are modified, no DRM is circumvented, no authentication is bypassed.
+          You're using the official signed Brave build with a configuration that Brave themselves allow on another platform.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Will this get patched?
+          <span class="faq-chevron">▼</span>
+        </div>
+
+        <div class="faq-answer">
+          Brave is aware of the bypass (they track it in issue #53780).
+          However, the purchase check is local — the same mechanism that makes Linux free.
+          Patching it would require Brave to either remove the Linux free option or change the entire activation system.
+          For now, this works with the current release.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Does it work on Windows 11?
+          <span class="faq-chevron">▼</span>
+        </div>
+
+        <div class="faq-answer">
+          Yes. Windows 10 (22H2+) and Windows 11, 64-bit only. No dependencies required.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Is this a cracked/modified binary?
+          <span class="faq-chevron">▼</span>
+        </div>
+
+        <div class="faq-answer">
+          No. The browser binary is the official signed build from Brave's GitHub releases,
+          verified with authenticode signatures from Brave Software, Inc. Nothing is modified.
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <div class="faq-question">
+          Can I use this on multiple computers?
+          <span class="faq-chevron">▼</span>
+        </div>
+
+        <div class="faq-answer">
+          Yes. Copy the folder to any Windows PC or USB drive.
+          No activation, no per-device limit, no tracking.
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="social-links">
+
+      <a href="https://github.com/thesajidalam/BraveOriginFree/stargazers">
+        ★ Star on GitHub
+      </a>
+
+      ·
+
+      <a href="https://github.com/thesajidalam/BraveOriginFree/issues">
+        Report Issue
+      </a>
+
+      ·
+
+      <a href="https://github.com/thesajidalam/BraveOriginFree">
+        Source Code
+      </a>
+
+    </div>
+
+    <div class="disclaimer">
+
+      <p>
+        <strong>Disclaimer</strong> — This project is for educational purposes only.
+        It demonstrates how a configuration flag that is freely available on one platform can be applied on another.
+      </p>
+
+      <p style="margin-top:8px;">
+        Brave Origin is a trademark of Brave Software Inc.
+        This project is not affiliated with or endorsed by Brave Software Inc.
+        All browser binaries are the official signed builds distributed by Brave on GitHub.
+        No binaries have been modified, patched, or tampered with.
+      </p>
+
+      <p style="margin-top:8px;">
+        Made by
+        <a href="https://github.com/thesajidalam" style="color:#fb8b00">
+          Sajid Alam
+        </a>
+        — MIT Licensed
+      </p>
+
+    </div>
+
+    <div class="footer">
+
+      <p>
+        If this saved you $60, consider starring the repo on GitHub. ★
+      </p>
+
+      <p style="margin-top:8px;">
+        It helps others find it.
+      </p>
+
+    </div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
