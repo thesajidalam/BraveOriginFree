@@ -1,17 +1,29 @@
-🚀 **BraveOriginFree v1.1 Update Released!**
+🔥 **BRAVE ORIGIN FREE v1.1 - NOW LIVE** 🔥
 
-Brave Origin costs $60 on Windows. On Linux it's free — now fixed!
+Brave Origin costs **$60 on Windows**. On Linux it's FREE. We fixed that.
 
-**What's New:**
-⚡ Faster Launch with Launch.bat (instant startup)
-🚀 Optimized run.bat for quicker launches
-🌐 Set as Default Browser with MakeDefault.bat
-📦 Smarter auto-install flow
-📝 Improved docs & contribution guidelines
+✨ **WHAT'S NEW:**
+⚡ **Launch.bat** - Instant launch, zero delays
+🚀 **Optimized run.bat** - Faster than ever
+🌐 **MakeDefault.bat** - Set as default browser in one click
+🔧 **Smarter Installer** - Auto-launches if not installed
+📚 **Professional Docs** - Contributing, CoC & Changelog added
 
-**Download Latest:**
-🔗 https://github.com/thesajidalam/BraveOriginFree/releases/latest
+✅ **FEATURES:**
+• Uses official signed Brave binaries
+• 100% portable - runs from anywhere/USB
+• No admin rights needed
+• No modified executables
+• Rewards, Wallet, VPN, AI & bloat removed
+• Brave Shields fully enabled
+• Free forever
 
-No modified binaries • Portable • No admin needed • Works on USB
+📥 **DOWNLOAD NOW:**
+👉 https://github.com/thesajidalam/BraveOriginFree/releases/latest
 
-#BraveOrigin #BraveBrowser #FreeBrowser #Privacy
+🌐 **WEBSITE:**
+👉 https://thesajidalam.github.io/BraveOriginFree/
+
+If this saves you $60, drop a ⭐ on GitHub!
+
+#BraveOrigin #BraveBrowser #FreeBrowser #Privacy #OpenSource #Windows
