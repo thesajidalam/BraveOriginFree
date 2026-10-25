@@ -1,176 +1,115 @@
-# Brave Origin For Windows Free
-# Brave Origin Free Download 
-# Brave Origin
-# Brave Origin Free
+<div align="center">
+
+# Brave Origin Free for Windows
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6.svg)]()
+[![Brave Origin](https://img.shields.io/badge/Brave%20Origin-Latest-FB542B.svg)](https://github.com/brave/brave-browser/releases)
+[![GitHub stars](https://img.shields.io/github/stars/thesajidalam/BraveOriginFree?style=social)](https://github.com/thesajidalam/BraveOriginFree/stargazers)
+[![GitHub release](https://img.shields.io/github/v/release/thesajidalam/BraveOriginFree)](https://github.com/thesajidalam/BraveOriginFree/releases)
+
 **Brave Origin costs $60 on Windows. On Linux it's free. This fixes that.**
-[![License](https://raw.githubusercontent.com/thesajidalam/BraveOriginFree/refs/heads/main/assets/BravePage.png)]()
-[![Version](https://img.shields.io/badge/Brave_Origin-1.91.175-blue)](https://github.com/brave/brave-browser/releases)
-[![Platform](https://img.shields.io/badge/Windows-10_11-green)]()
-[![License](https://img.shields.io/badge/license-MIT-green)]()
+
+[Download Latest](https://github.com/thesajidalam/BraveOriginFree/releases/latest) • [Live Demo](https://braveorigin.vercel.app) • [Report Bug](https://github.com/thesajidalam/BraveOriginFree/issues/new?template=bug_report.yml) • [Request Feature](https://github.com/thesajidalam/BraveOriginFree/issues/new?template=feature_request.yml)
+
+</div>
 
 ---
 
-## What is this?
+## ✨ What's New in Latest Version
 
-Brave Origin is a stripped-down version of Brave — same privacy, same Shields, same speed — but without Rewards, Wallet, AI, News, VPN, Tor, or telemetry. It's the browser you get when you want Brave's core without the extras.
-
-On Linux, it's free. On Windows, Brave charges $60.
-
-This project removes that paywall by doing exactly what the Linux version does — setting a configuration flag that tells the browser it's activated. No cracks. No modified binaries. Just a configuration that Brave themselves allow on other platforms.
-
----
-
-## What you get
-
-- **Brave Origin** — the official signed build from Brave, untouched and verified
-- **Purchase bypass** — the same activation the Linux version uses
-- **All bloat removed** — Rewards, Wallet, Leo AI, News, VPN, Tor, P3A all disabled
-- **Zero installation** — runs from any folder, USB drive, anywhere
-- **No admin rights** — works in user space, no registry changes
-- **Auto-updates** — check for new versions with `src\update.ps1`
+- ⚡ **Faster Launch** - `Launch.bat` for instant startup with no menu delays
+- 🚀 **Improved run.bat** - Optimized for quicker browser launch
+- 🌐 **Set as Default Browser** - New `MakeDefault.bat` + `make-default.ps1` to register Brave Origin as your default browser (works without admin)
+- 📦 **Auto-Install Flow** - Smarter installer that launches automatically if not installed
+- 📝 **Better Documentation** - Added Contributing, Code of Conduct, and Changelog
 
 ---
 
-## How to use
-# https://braveorigin.vercel.app
-# https://thesajidalam.github.io/BraveOriginFree/
-### The 2-minute install
+## 📖 About
 
-```batch
-1. Download this repo (Code → Download ZIP, or clone it)
-2. Extract the folder
-3. Double-click install.bat
-4. Done.
-```
+Brave Origin is a stripped-down version of Brave — same privacy, same Shields, same speed — but without Rewards, Wallet, Leo AI, News, VPN, Tor, or telemetry. It's the browser you want when you want Brave's core without the extras.
 
-That's it. `install.bat` will:
-- Download the latest Brave Origin from GitHub (~150 MB)
-- Apply the free activation bypass
-- Put a shortcut on your desktop
-- Launch your new browser
-
-### If you already ran install.bat
-
-Just double-click `run.bat` any time to start the browser.
+On Linux, it's free. On Windows, Brave charges $60. This project removes that paywall by applying the same local activation configuration used by the Linux version. **No cracks. No modified binaries. Just configuration.**
 
 ---
 
-## How the bypass works
+## 🚀 Quick Start
 
-Brave Origin reads its activation state from a file called `Local State`. When you click "Proceed with Origin for free" on Linux, Brave writes two things:
+### Installation (First Time)
+1. [Download the latest release](https://github.com/thesajidalam/BraveOriginFree/releases/latest) or clone this repo
+2. Extract the folder to any location (Works on USB drives too!)
+3. Double-click `install.bat`
+4. Done! A desktop shortcut will be created
 
-```
-purchase_validated = true
-SKU credential = injected
-```
+### Launching
+- **Instant Launch:** Double-click `Launch.bat` (Recommended)
+- **Standard Launch:** Double-click `run.bat`
+- **Desktop Shortcut:** Use "Brave Origin (Free)" shortcut
 
-This project writes those same values into `Local State` *before* the browser ever starts. Windows Origin sees them, thinks it's been purchased, and unlocks completely.
-
-The browser checks this file on every launch. It does not contact Brave's servers for license validation. The entire check is local.
+### Make it Default Browser
+1. Run `MakeDefault.bat`
+2. Follow the prompts
+3. Also set via `Windows Settings → Apps → Default apps → Brave Origin Free` if needed
 
 ---
 
-## What's disabled
-
-Brave Origin is supposed to be minimal. This configuration makes sure none of the extras sneak through:
+## 🔧 Features
 
 | Feature | Status |
-|---------|--------|
-| Brave Shields | ON |
-| Bookmarks / History | ON |
-| Password Manager | ON |
-| Chrome Extensions | ON |
-| Developer Tools | ON |
-| Brave Rewards | OFF |
-| Brave Wallet | OFF |
-| Leo AI | OFF |
-| Brave News | OFF |
-| Brave Talk | OFF |
-| Brave VPN | OFF |
-| Brave Tor | OFF |
-| Telemetry (P3A) | OFF |
-| Background updates | OFF |
-| Component updates | OFF |
-| Sync | OFF |
-
-Everything that's OFF is handled by CLI flags passed to the browser — same flags that Brave's Linux Origin build has compiled out by default.
-
-#T.ME Link 🔗:
-https://t.me/braveorigin/
----
-
-## Requirements
-
-- Windows 10 or 11
-- 64-bit processor
-- 2 GB RAM
-- 500 MB free disk space
-- Internet connection (for the initial download)
-
-That's it. No .NET, no runtime, no dependencies.
+| --- | --- |
+| Brave Shields | ✅ Enabled |
+| Bookmarks & History | ✅ Enabled |
+| Privacy Protection | ✅ Enabled |
+| Rewards, Wallet, Leo AI | ❌ Disabled |
+| Brave News, Talk, VPN, Tor | ❌ Disabled |
+| P3A, Ads Telemetry | ❌ Disabled |
+| Portable (No Installation) | ✅ Yes |
+| No Admin Rights Required | ✅ Yes |
+| Auto-Updates Support | ✅ Yes |
+| Works from USB Drive | ✅ Yes |
 
 ---
 
-## Project structure
+## 🛠️ How It Works
+
+Brave Origin reads activation from `Local State`. This project writes the same values used on Linux:
+```json
+{"brave":{"origin":{"purchase_validated":true}},"skus":{"state":{"67":"{\"credentials\":{\"items\":{\"6\":\"7\"}}}"}}}
+```
+The check is entirely local — no Brave servers contacted for validation.
+
+---
+
+## 📂 Project Structure
 
 ```
 BraveOriginFree/
-├── install.bat          # One-click installer (downloads + sets up everything)
-├── run.bat              # Launch the browser
+├── install.bat      # First-time installer
+├── run.bat          # Standard launcher (optimized)
+├── Launch.bat       # Instant launcher
+├── MakeDefault.bat  # Set as default browser
+├── make-default.ps1 # Default browser registration
 ├── src/
-│   ├── bypass.ps1       # Patch any existing Brave Origin install
-│   └── update.ps1       # Check for and apply updates
-├── config/
-│   └── policies.json    # Enterprise policies (disables all extras)
-├── profile/
-│   └── Local State      # Pre-seeded activation file
-├── bin/                 # Brave Origin binary (auto-downloaded)
-└── data/                # Your browser profile (bookmarks, passwords, etc.)
+│   ├── bypass.ps1   # Standalone patcher
+│   └── update.ps1   # Update checker
+└── README.md
 ```
 
 ---
 
-## Source code
+## 🤝 Contributing
 
-```powershell
-git clone https://github.com/thesajidalam/BraveOriginFree.git
-cd BraveOriginFree
-.\install.bat
-```
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
----
-
-## Legal / Disclaimer
-
-*This project is for educational purposes. It demonstrates how a configuration flag that is freely available on one platform can be applied on another.*
-
-*Brave Origin is developed by Brave Software Inc. All browser binaries are the official signed builds downloaded from Brave's public GitHub repository. No binaries have been modified, patched, or tampered with.*
-
-*This project is not affiliated with Brave Software Inc.*
+- [Report a Bug](https://github.com/thesajidalam/BraveOriginFree/issues/new?template=bug_report.yml)
+- [Request a Feature](https://github.com/thesajidalam/BraveOriginFree/issues/new?template=feature_request.yml)
+- [Submit a Pull Request](https://github.com/thesajidalam/BraveOriginFree/pulls)
 
 ---
 
-## Credits
+## 📜 License
 
-Created and maintained by **Sajid Alam**.
+This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
-- GitHub: [@thesajidalam](https://github.com/thesajidalam)
-- Project: [github.com/thesajidalam/BraveOriginFree](https://github.com/thesajidalam/BraveOriginFree)
-
----
-
-## Star this repo
-
-If this saved you $60, consider starring the repo. It helps others find it.
-
-
----
-
-## Quick Tips
-
-### Make it your default browser
-1. Run  (works without admin rights)
-2. Open Windows Settings > Apps > Default apps > Brave Origin Free and set as default
-
-### Faster launch
-Use  for instant launch with no extra prompts. Also works from desktop shortcut.
+**Disclaimer:** This project is for educational purposes. Brave Origin is a product of [Brave Software](https://brave.com). We use only official signed builds from Brave's GitHub releases.
