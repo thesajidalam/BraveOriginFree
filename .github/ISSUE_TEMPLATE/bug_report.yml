@@ -1,0 +1,39 @@
+name: Bug Report
+description: Report a bug in BraveOriginFree
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug!
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which version of Brave Origin are you using?
+      placeholder: e.g., 1.91.175
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows 10
+        - Windows 11
+        - Other
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened?
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this?
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs/Screenshots
+      description: Add any relevant logs or screenshots
