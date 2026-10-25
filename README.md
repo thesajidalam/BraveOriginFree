@@ -162,3 +162,15 @@ Created and maintained by **Sajid Alam**.
 ## Star this repo
 
 If this saved you $60, consider starring the repo. It helps others find it.
+
+
+---
+
+## Quick Tips
+
+### Make it your default browser
+1. Run  (works without admin rights)
+2. Open Windows Settings > Apps > Default apps > Brave Origin Free and set as default
+
+### Faster launch
+Use  for instant launch with no extra prompts. Also works from desktop shortcut.
